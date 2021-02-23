@@ -6,7 +6,7 @@ const oddnum = numbers.filter (number => number%2);
 const num25 = numbers => numbers.filter((number => number % 2 === 0) || (number => number % 5 === 0));
 //use filter to get numbers divisible by 3 squared
 const num3 = numbers => {
-  return numbers.filter(number => number % 3 === 0).map(x => x **2)
+  return numbers.filter(number => number % 3 === 0).map(x => x **2)};
 //use reduce to get the sum of numbers divisible by 5 squared
 
 
@@ -14,3 +14,4 @@ const num3 = numbers => {
 
 console.log(oddnum)
 console.log(num25(numbers))
+console.log(num3)
