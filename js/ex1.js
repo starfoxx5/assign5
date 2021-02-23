@@ -23,3 +23,5 @@ const newSquares = [];
 newSquares.push(new square(5));
 newSquares.push(new square(7));
 newSquares.push(new square(12));
+
+console.log(square.describe());
