@@ -7,14 +7,14 @@ class square {
     return this.side * 4;
   }
   area(){
-    return this.area = this.side ** 2;
+    return this.side ** 2;
   }
   diagonal(){
-    return this.diagonal = (Math.sqrt(2))*(this.side ** 2);
+    return (Math.sqrt(2))*(this.side ** 2);
   }
   //return description
   describe(){
-    return `Square with side ${this.side} has perimeter of ${perimeter}, area of ${area}, and diagonal of ${diagonal}`;
+    return `Square with side ${this.side} has perimeter of ${obj.perimeter}, area of ${area}, and diagonal of ${diagonal}`;
   }
 }
 
