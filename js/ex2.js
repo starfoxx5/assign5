@@ -15,3 +15,4 @@ const squ5 = numbers.filter(number => number % 5 === 0).map(x => x **2).reduce((
 console.log(oddnum)
 console.log(num25(numbers))
 console.log(num3(numbers))
+console.log(squ5(numbers))
