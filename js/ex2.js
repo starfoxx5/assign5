@@ -14,4 +14,4 @@ const num3 = numbers => {
 
 console.log(oddnum)
 console.log(num25(numbers))
-console.log(num3)
+console.log(num3(numbers))
