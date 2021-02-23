@@ -4,13 +4,13 @@ class square {
   }
   //add methods
   perimeter(){
-    this.perimeter = side * 4;
+    return this.perimeter = side * 4;
   }
   area(){
-    this.area = this.side ** 2;
+    return this.area = this.side ** 2;
   }
   diagonal(){
-    this.diagonal = (Math.sqrt(2))*(this.side ** 2);
+    return this.diagonal = (Math.sqrt(2))*(this.side ** 2);
   }
   //return description
   describe(){
