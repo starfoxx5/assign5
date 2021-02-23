@@ -4,7 +4,7 @@ class square {
   }
   //add methods
   perimeter(){
-    this.perimeter = this.side * 4;
+    this.perimeter = side * 4;
   }
   area(){
     this.area = this.side ** 2;
