@@ -8,7 +8,7 @@ const num25 = numbers => numbers.filter((number => number % 2 === 0) || (number 
 const num3 = numbers => {
   return numbers.filter(number => number % 3 === 0).map(x => x **2)};
 //use reduce to get the sum of numbers divisible by 5 squared
-
+const squ5 = numbers.filter(number => number % 5 === 0).map(x => x **2).reduce((num, value) => num + value, 0);
 
 
 
