@@ -39,8 +39,8 @@ const studentList = [
 const Cname = studentList => studentList.lastName[0] === "C";
 const avg = array =>
   array.reduce((sum, value) => sum + value, 0) / array.length;
-const amax = array => array.reduce(Math.max(studentList.scores));
-const amin = array => Math.min(studentList.scores);
+const maxSC = Math.max(...studentList.scores);
+const minSC = array => Math.min(studentList.scores);
 
 // Filter by last name starting with C, first and last name, min, max, and avg score
 console.log(
@@ -48,8 +48,8 @@ console.log(
     return {
       Lname: studentList.lastName,
       Fname: studentList.firstName,
-      minScore: amax(studentList.scores),
-      maxScore: amin(studentList.scores),
+      minScore: maxSC(studentList.scores),
+      maxScore: minSC(studentList.scores),
       avgGrade: avg(studentList.scores)
     };
   })
