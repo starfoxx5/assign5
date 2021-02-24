@@ -32,9 +32,6 @@ const studentList = [
   },
 ];
 
-//const female = student => student.sex === "f";
-//const average = array =>
- // array.reduce((sum, value) => sum + value, 0) / array.length;
 
 const Cname = studentList => studentList.lastName[0] === "C";
 const avg = array =>
