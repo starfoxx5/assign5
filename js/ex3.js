@@ -48,8 +48,8 @@ console.log(
     return {
       Lname: studentList.lastName,
       Fname: studentList.firstName,
-      minScore: amax(studentList.scores),
-      maxScore: amin(studentList.scores),
+      minScore: amax(...studentList.scores),
+      maxScore: amin(...studentList.scores),
       avgGrade: avg(studentList.scores)
     };
   })
