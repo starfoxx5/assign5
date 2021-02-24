@@ -32,16 +32,25 @@ const studentList = [
   },
 ];
 
-const female = student => student.sex === "f";
-const average = array =>
+//const female = student => student.sex === "f";
+//const average = array =>
+ // array.reduce((sum, value) => sum + value, 0) / array.length;
+
+const Cname = studentList => studentList.lastName[0] === "C";
+const avg = array =>
   array.reduce((sum, value) => sum + value, 0) / array.length;
+const amax = array => Math.max(studentList.scores);
+const amin = array => Math.min(studentList.scores);
 
 // Filter by last name starting with C, first and last name, min, max, and avg score
 console.log(
-  students.filter(female).map(student => {
+  studentList.filter(Cname).map(studentList => {
     return {
-      name: student.name,
-      avgGrade: average(student.grades)
+      Lname: studentList.lastName,
+      Fname: studentList.firstName,
+      minScore: amax(studentList.scores),
+      maxScore: amin(studentList.scores),
+      avgGrade: avg(studentList.scores)
     };
   })
 );
