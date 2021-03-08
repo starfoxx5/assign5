@@ -57,7 +57,8 @@ console.log(
       Lname: studentList.lastName,
       Fname: studentList.firstName,
       //maxScore: maxSC(studentList.scores),
-      maxScore: student.grades.reduce((max, score) => returnMax(max, score), -99),
+      //maxScore: student.grades.reduce((max, score) => returnMax(max, score), -99),
+      maxxScores: maxxScores(studentList.scores),
       minScore: minSC(studentList.scores),
       avgGrade: avg(studentList.scores)
     };
