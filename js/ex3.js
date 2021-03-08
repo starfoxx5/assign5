@@ -39,6 +39,15 @@ const avg = array =>
 const maxSC = () => (studentList.scores).reduce((min, currentValue) => Math.min(min, currentValue), array[0]);
 const minSC = array => Math.min(studentList.scores);
 
+//prof way of doing max
+const maxxScores = studentList.map(student => student.scores)
+    .map(scoresArray =>{
+      return{
+        maxVal: scoresArray.reduce((max, element) => Math.max(max, element), -99)
+      }
+    });
+
+
 // Filter by last name starting with C, first and last name, min, max, and avg score
 console.log(
   studentList.filter(Cname).map(studentList => {
