@@ -36,18 +36,10 @@ const studentList = [
 const Cname = studentList => studentList.lastName[0] === "C";
 const avg = array =>
   array.reduce((sum, value) => sum + value, 0) / array.length;
-//const maxSC = () => (studentList.scores).reduce((min, currentValue) => Math.min(min, currentValue), array[0]);
-// const maxSC = () => udent.grades.reduce((max, score) => Math.max(max, score), -99)
+
 const returnMax = (x, y) => (x > y) ? x : y;
 const minSC = array => Math.min(studentList.scores);
 
-//prof way of doing max
-const maxxScores = studentList.map(student => student.scores)
-    .map(scoresArray =>{
-      return{
-        maxVal: scoresArray.reduce((max, element) => Math.max(max, element), -99)
-      }
-    });
 
 
 // Filter by last name starting with C, first and last name, min, max, and avg score
@@ -56,9 +48,7 @@ console.log(
     return {
       Lname: studentList.lastName,
       Fname: studentList.firstName,
-      //maxScore: maxSC(studentList.scores),
-      //maxScore: student.grades.reduce((max, score) => returnMax(max, score), -99),
-      maxxScores: maxxScores(studentList.scores),
+      returnMax: studentList.scores.reduce((max, score) => returnMax(max, score), -99),
       minScore: minSC(studentList.scores),
       avgGrade: avg(studentList.scores)
     };
